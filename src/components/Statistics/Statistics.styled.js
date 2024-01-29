@@ -30,7 +30,7 @@ export const StatItem = styled('li')`
   flex-basis: calc(100% / 5);
 
   color: white;
-  background-color: ${p => p.bgColor};
+  background-color: ${p => p.$bgcolor};
 `;
 
 export const Label = styled('span')`

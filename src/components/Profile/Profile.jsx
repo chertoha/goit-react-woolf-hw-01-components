@@ -24,7 +24,7 @@ const Profile = ({
     <Wrapper>
       <Description>
         <AvatarWrapper>
-          <Avatar src={avatar} alt="User avatar" class="avatar" width={335} />
+          <Avatar src={avatar} alt="User avatar" width={335} />
         </AvatarWrapper>
         <Name>{username}</Name>
         <Tag>@{tag}</Tag>
@@ -33,16 +33,16 @@ const Profile = ({
 
       <StatList>
         <StatItem>
-          <Label class="label">Followers</Label>
-          <Value class="quantity">{followers}</Value>
+          <Label>Followers</Label>
+          <Value>{followers}</Value>
         </StatItem>
         <StatItem>
-          <Label class="label">Views</Label>
-          <Value class="quantity">{views}</Value>
+          <Label>Views</Label>
+          <Value>{views}</Value>
         </StatItem>
         <StatItem>
-          <Label class="label">Likes</Label>
-          <Value class="quantity">{likes}</Value>
+          <Label>Likes</Label>
+          <Value>{likes}</Value>
         </StatItem>
       </StatList>
     </Wrapper>

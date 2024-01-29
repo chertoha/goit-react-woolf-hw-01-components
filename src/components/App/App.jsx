@@ -1,9 +1,11 @@
 import Container from 'components/Container';
 import Profile from 'components/Profile';
 import Section from 'components/Section';
+import Statistics from 'components/Statistics';
+import FriendList from 'FriendList';
 import user from 'utils/user.json';
 import stats from 'utils/data.json';
-import Statistics from 'components/Statistics';
+import friends from 'utils/friends.json';
 
 const App = () => {
   return (
@@ -23,6 +25,12 @@ const App = () => {
       <Section>
         <Container>
           <Statistics stats={stats} title="Upload stats" />
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <FriendList friends={friends} />
         </Container>
       </Section>
     </div>
